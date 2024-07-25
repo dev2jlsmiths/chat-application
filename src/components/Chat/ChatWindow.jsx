@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import ChatCard from "./ChatCard";
 
 const ChatWindow = () => {
   return (
@@ -18,20 +19,7 @@ const ChatWindow = () => {
       </div>
       <div className="flex-1 overflow-y-auto">
         {/* Chat messages */}
-        <div className="mb-4">
-          <div className="bg-gray-100 p-3 rounded">
-            <div>Client came through this product page</div>
-            <div className="mt-2 bg-white p-3 rounded">
-              <div className="flex items-center">
-                <div className="w-10 h-10 bg-gray-300 rounded"></div>
-                <div className="ml-3">
-                  <div>Lorem ipsum dolor sit amet consectetur.</div>
-                  <div>Price: ₹ 20000</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ChatCard />
       </div>
       <div className="mt-4 flex items-center space-x-4">
         {/* Chat input and actions */}

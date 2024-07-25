@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button"
+import { SearchIcon } from 'lucide-react';
 
 
 
@@ -8,11 +9,14 @@ const Sidebar = () => {
     <div className="w-1/4 bg-gray-100 p-4 border-r">
 
       <div className="mb-2">
+      <div className=" flex px-2 py-1 outline-0 rounded-xl bg-gray-200">
         <input
           type="text"
           placeholder="Search"
-          className="w-full p-2 border rounded"
+          className="w-full bg-gray-200 outline-none"
         />
+        <SearchIcon />
+        </div>
       </div>
       <div className="mb-4 flex space-x-2">
         <Button className="rounded-lg bg-white hover:bg-black hover:text-white">Today</Button>
